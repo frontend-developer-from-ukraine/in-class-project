@@ -10,6 +10,9 @@ html {
 .page {
     width: 1400px;
     margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -99,4 +102,15 @@ html {
 .top-section {
     background-color: #F3C6BD;
     padding-top: 39px;
+}
+
+.footer {
+    height: 50px;
+    width: 1140px;
+    display: flex;
+    margin: auto;
+}
+
+footer-links {
+    margin-top: auto;
 }
