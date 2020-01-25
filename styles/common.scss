@@ -1,5 +1,5 @@
 .action-button {
-    background-color: #3840C4;
+    background-color: #3040c4;
     color: #fff;
     width: 160px;
     height: 48px;
@@ -18,5 +18,16 @@
 .hide_mobile {
     @include for-large-down {
         display: none;
+    }
+}
+
+.icon-arrow_right {
+    display: block;
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png');
+    width: 7px;
+    height: 12px;
+    margin: 64px 22px;
+    @include for-large-up {
+        margin: 35px 25px;
     }
 }

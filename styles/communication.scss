@@ -1,116 +1,123 @@
 .communication {
-    padding: 50px 15px 40px 15px;
-    display: flex;
-    flex-direction: column;
+    padding: 0 15px;
     @include for-large-up {
-        padding: 110px 130px;
-        // flex-direction: row;
+        margin: 110px auto;
     }
-    &__dekstop-info {
+    &__conteiner {
+        display: flex;
+        flex-direction: column;
+        margin: 0 15px;
         @include for-large-up {
             display: flex;
+            justify-content: space-between;
+            width: 1140px;
         }
     }
-    &__info {
+    &__page {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
         @include for-large-up {
-            width: 461px;
-            margin-top: 13px;
+            max-width: 461px;
+            margin-top: 0;
         }
     }
-    &__subtitle {
+    &__header {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 34px;
         color: #0189D1;
-        margin: 0;
+        margin-left: 15px;
+        @include for-large-up {
+            margin-top: 16px;
+        }
     }
     &__title {
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 40px;
         margin: 0;
-        margin-top: 17px;
+        letter-spacing: -0.357143px;
+        margin-top: 18px;
+        margin-left: 15px;
         @include for-large-up {
-            font-weight: bold;
             font-size: 56px;
             line-height: 56px;
             letter-spacing: -0.5px;
-            margin-top: 24px;
         }
     }
     &__description {
         margin: 0;
+        font-size: 24px;
+        line-height: 34px;
         margin-top: 18px;
+        margin-left: 15px;
         @include for-large-up {
             margin-top: 30px;
         }
     }
     &__button {
-        margin: 0;
         margin-top: 30px;
-        width: 160px;
         @include for-large-up {
             margin-top: 39px;
         }
     }
-    &__illustration {
+    &__icon {
         display: flex;
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        margin-top: 40px;
         @include for-large-up {
-            margin-left: auto;
-            margin-top: 0;
+            margin-top: -410px;
+            margin-left: 780px;
         }
     }
     &__image {
-        margin-top: 40px;
-        max-width: 290px;
+        max-width: 100%;
         @include for-large-up {
-            margin-top: 0;
-            max-width: 425px;
+            width: 425px;
             height: 426px;
         }
     }
-    &__image-caption {
-        margin-top: 17px;
+    &__image-title {
+        margin-top: 13px;
         font-size: 14px;
         line-height: 22px;
-        color: #2b292d99;
-        @include for-large-up {
-            margin-top: 15px;
-        }
+        text-align: center;
+        color: rgba(43, 41, 45, 0.6);
     }
-    &__horizontal-line {
-        width: 150px;
-        height: 1px;
-        background-color: #0000001A;
-        border: 0;
+    &__line {
         margin: 0;
         margin-top: 40px;
-        @include for-large-up {
-            margin-top: 26px;
-        }
+        width: 150px;
+        border-top: 1px solid rgba(43, 41, 45, 0.1);
     }
-    &__proposition {
-        @include for-large-up {
-            display: flex;
-            margin-top: 41px;
-            justify-content: space-between;
-        }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 74px 0 50px;
+    @include for-large-up {
+        flex-direction: unset;
     }
-    &__item {
-        margin-top: 33px;
-        @include for-large-up {
-            margin-top: 0;
-            width: 360px;
-        }
-    }
-    &__item-description {
-        margin: 0;
+    &__position {
+        display: flex;
+        flex-direction: column;
         font-size: 18px;
         line-height: 26px;
+        @include for-large-up {
+            margin-top: 41px;
+            width: 360px;
+            height: 115px;
+            margin-left: 30px;
+        }
     }
-    &__item-description-name {
+    &__link {
+        font-size: 16px;
         font-weight: 700;
-    }
-    &__item-link {
         color: #3040C4;
-        font-weight: 700;
-        margin-top: 10px;
-        display: inline-block;
     }
 }

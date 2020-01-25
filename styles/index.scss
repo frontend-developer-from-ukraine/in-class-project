@@ -1,32 +1,30 @@
-@import 'breakpoints.scss';
-@import 'variables.scss';
-@import 'common.scss';
-@import 'about.scss';
-@import 'customers.scss';
-@import 'features.scss';
-@import 'order.scss';
-@import 'footer.scss';
-@import 'header.scss';
-@import 'headline.scss';
-@import 'tips.scss';
-@import 'inbox.scss';
-@import 'communication.scss';
-@import 'audience.scss';
-@import 'feedback.scss';
-@import 'hiring.scss';
+@import'breakpoints.scss';
+@import'common.scss';
+@import'about.scss';
+@import'customers.scss';
+@import'features.scss';
+@import'footer.scss';
+@import'header.scss';
+@import'headline.scss';
+@import'tips.scss';
+@import'order';
+@import'hiring';
+@import'feedback';
+@import'audience';
+@import'communication.scss';
+@import'inbox.scss';
 * {
     box-sizing: border-box;
 }
 
 html {
+    color: #2B292D;
     font-size: 16px;
     font-family: 'Work Sans', sans-serif;
-    color: #2B292D;
 }
 
 .page {
     width: 100%;
-    transition: 1s;
     @include for-large-up {
         max-width: 1400px;
         margin: auto;
