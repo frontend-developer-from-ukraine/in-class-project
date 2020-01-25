@@ -69,6 +69,7 @@
     display: flex;
     overflow: hidden;
     color: #2B292D;
+    transition: 1s;
     &:hover {
         background-color: #3141C5;
         .vacancy__title {
@@ -81,7 +82,7 @@
             background-color: transparent;
         }
         .icon-arrow-right {
-            background-image: url('img/icon-arrow-right-white.png');
+            background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png');
         }
     }
     &__details {
